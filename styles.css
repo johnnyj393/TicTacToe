@@ -1,0 +1,111 @@
+/* Main Section */
+
+:root {
+    --main1: #011936;
+    --main2: #465362;
+    --main3: #82A3A1;
+    --highlight1: #9FC490;
+    --highlight2: #C0DFA1;
+}
+
+body {
+    background-color: var(--main1);
+    color: var(--highlight1);
+    font-family: 'Shadows Into Light', sans-serif;
+}
+
+#title {
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+
+
+/* Players Name Section */
+
+.playerTitle {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+#players {
+    display: flex;
+}
+
+.playerInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addPlayer {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: var(--main2);
+    color: var(--highlight1);
+    font-family: inherit;
+    border-radius: 0.5rem;
+    margin: 0.2rem;
+}
+
+input {
+    font-family: inherit;
+    border-radius: 0.5rem;
+    padding-left: 5px;
+}
+
+
+
+/* Board Section */
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    width: fit-content;
+    margin: 3rem auto;
+}
+
+.boardButton {
+    height: 70px;
+    width: 70px;
+    font-size: 2.5rem;
+}
+
+.winningSpace {
+    background-color: var(--highlight2);
+}
+
+
+
+/* Control Section */
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls > button {
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+
+#scoreboard {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 1rem;
+}
+
+.scorecard {
+    flex: 1;
+    text-align: center;
+    font-size: 1.5rem;
+}
