@@ -129,8 +129,10 @@ class Button {
     }))});
 
 
+
     // Game Functions
 
+    
     // New Game button function
     function newGame() {
         // Assign new X and O
